@@ -7,7 +7,6 @@ nota1 = 0
 nota2 = 0
 nota3 = 0
 promedioTotal = 0
-estudiantesTotal = 0
 aprobados = 0
 reprobados = 0
 
@@ -29,7 +28,6 @@ for i in range(1, estudiantes+1):
 
     promedio = (nota1+nota2+nota3)/3
     promedioTotal += promedio
-    estudiantesTotal = i
     if promedio >= 3.0:
         aprobados += 1
         print(f"\n{nombre}, aprobaste con un promedio de: {promedio:.1f}\n")
@@ -37,7 +35,7 @@ for i in range(1, estudiantes+1):
         reprobados += 1
         print(f"\n{nombre}, reprobaste con un promedio de: {promedio:.1f}\n")
 
-promedioFinal = promedioTotal/estudiantesTotal
+promedioFinal = promedioTotal/estudiantes
 
 print(f"Aprobaron un total de {aprobados} estudiantes, reprobaron {reprobados} estudiantes, y el promedio final fue de {promedioFinal:.1f}.")
     
